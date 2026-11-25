@@ -1,0 +1,24 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local Python environments
+.venv/
+venv/
+env/
+
+# Local credentials and settings
+.env
+.env.*
+!.env.example
+
+# Local minute-bar market data
+trader/nifty50/1m/
+
+# Additional generated backtest runs; keep the published results directory
+# versioned.
+Jakeschincariol-day-trader-skill/results-new/
