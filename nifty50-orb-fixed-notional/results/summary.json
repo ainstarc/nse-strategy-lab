@@ -1,0 +1,57 @@
+{
+  "universe_source": "https://niftyindices.com/IndexConstituent/ind_nifty50list.csv",
+  "universe_snapshot_date": "2026-11-25",
+  "constituent_count": 50,
+  "period_start": "2015-02-02",
+  "period_end": "2026-11-23",
+  "trade_count": 232049,
+  "fixed_notional_per_entry_inr": 100000,
+  "aggregate_cash_constraint": null,
+  "compounding": false,
+  "nominal_reference_capital_inr": 5000000,
+  "gross": {
+    "net_pnl_inr": 749386.01926601,
+    "gross_profit_inr": 54805984.644782044,
+    "gross_loss_inr": 54056598.625516035,
+    "profit_factor": 1.013862988762158,
+    "win_rate_pct": 36.15443289994786,
+    "maximum_realized_drawdown_inr": -296236.7561019724,
+    "maximum_realized_drawdown_pct": -5.4006008755713415,
+    "return_on_reference_capital_pct": 14.987720385320202
+  },
+  "estimated_zerodha_current_rate_charges_inr": {
+    "brokerage": 9281954.21,
+    "stt": 5762795.38,
+    "nse_transaction": 1415319.54,
+    "sebi": 46101.61,
+    "stamp_duty": 691512.96,
+    "gst": 1933815.86,
+    "ipft": 46.1,
+    "total": 19131545.674655758
+  },
+  "after_estimated_charges": {
+    "net_pnl_inr": -18382159.655389957,
+    "profit_factor": 0.7229798179538474,
+    "win_rate_pct": 35.11068782886373,
+    "average_pnl_per_trade_inr": -79.21671567380147,
+    "maximum_drawdown": null
+  },
+  "charge_assumptions": {
+    "brokerage": "0.03% or INR 20 per executed order, whichever is lower",
+    "stt": "0.025% on sell-side turnover",
+    "nse_transaction": "0.00307% of turnover",
+    "sebi": "INR 10 per crore of turnover",
+    "stamp_duty": "0.003% on buy-side turnover",
+    "gst": "18% on brokerage, SEBI, exchange transaction, and IPFT charges",
+    "ipft": "INR 0.01 per crore of turnover",
+    "source": "https://zerodha.com/charges/",
+    "application": "Current rates applied uniformly to the historical trade log; estimate, not actual contract-note charges."
+  },
+  "limitations": [
+    "Current NIFTY 50 constituents are applied retrospectively, creating survivorship bias.",
+    "Drawdown is gross and realized-exit-only; after-charge drawdown was not calculated.",
+    "Market impact and execution differences are not modeled.",
+    "Short margin requirements are not modeled.",
+    "No benchmark comparison was calculated."
+  ]
+}

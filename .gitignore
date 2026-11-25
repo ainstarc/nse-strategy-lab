@@ -19,6 +19,14 @@ env/
 # Local minute-bar market data
 trader/nifty50/1m/
 
+# Local Backtest Data; keep the public universe snapshot versioned.
+data/*
+!data/nifty50.json
+
+# Generated full-universe backtest outputs
+backtest/results/
+# backtest/*
+
 # Additional generated backtest runs; keep the published results directory
 # versioned.
 Jakeschincariol-day-trader-skill/results-new/
